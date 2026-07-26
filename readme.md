@@ -86,6 +86,26 @@ Security Report
 - Attempts to terminate detected processes
 - Displays detection reason
 
+---
+
+# Folder Structure
+
+```
+
+Anti-Keylogger/
+│
+├── anti-keylogger.py
+├── keylogger.py
+├── key_log.csv
+├── README.md
+├── requirements.txt
+└── screenshots/
+├── demo.png
+└── detection.png
+
+```
+
+---
 
 # Technologies Used
 
@@ -97,49 +117,82 @@ Security Report
 - os
 - time
 
+---
+
 # Detection Workflow
 
 The anti-keylogger follows these steps:
 
 ### Step 1
+
 Enumerate all running processes.
+
 ↓
 
 ### Step 2
+
 Identify Python processes.
+
 ↓
 
 ### Step 3
+
 Inspect command-line arguments.
+
 ↓
 
-### Step 
+### Step 4
+
 Search for suspicious keywords such as
+
 - pynput
 - keylog
 - keylogger
 - keyboard
 - keystroke
+
 ↓
 
 ### Step 5
+
 Inspect
+
 - Loaded memory mappings
 - Open files
+
 ↓
 
 ### Step 6
+
 If suspicious activity is found
+
 - Display process information
 - Attempt graceful termination
 - Force kill if necessary
 
+---
+
 # Installation
 
 Clone the repository
+
 ```bash
 git clone https://github.com/YourUsername/Anti-Keylogger.git
+```
 
+Move into the project
+
+```bash
+cd Anti-Keylogger
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
 
 # Running the Project
 
@@ -151,6 +204,7 @@ python keylogger.py
 
 Press **ESC** to stop logging.
 
+---
 
 ### Run Anti-Keylogger
 
@@ -185,7 +239,9 @@ Reason :
 Status :
 
 Successfully terminated.
+```
 
+---
 
 # Learning Outcomes
 

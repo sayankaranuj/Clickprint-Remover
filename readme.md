@@ -99,9 +99,6 @@ Anti-Keylogger/
 ├── key_log.csv
 ├── README.md
 ├── requirements.txt
-└── screenshots/
-├── demo.png
-└── detection.png
 
 ```
 
